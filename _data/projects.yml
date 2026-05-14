@@ -1,0 +1,9 @@
+- name: "企业信息裂变关联查询系统后端"
+  tech: "Node.js / Python / SQLite"
+  desc: "基于图数据逻辑设计的企业关联查询模块，支持企业增删改查及多层裂变关系穿透分析。"
+  link: "https://github.com"
+
+- name: "红外热成像原始像素数据 (.gy) 批量处理工具"
+  tech: "Python / NumPy / OpenCV"
+  desc: "工业级红外热成像二进制 raw 数据的批量自动化转换与对齐脚本，支持高效矩阵流处理。"
+  link: "https://github.com"
