@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold text-xl tracking-tight text-gray-900">Research & Dev.</span>
+            <div class="space-x-6 text-sm font-medium text-gray-600">
+                <a href="#about" class="hover:text-blue-600 transition">关于</a>
+                <a href="#publications" class="hover:text-blue-600 transition">研究成果</a>
+                <a href="#projects" class="hover:text-blue-600 transition">项目</a>
+                <a href="#skills" class="hover:text-blue-600 transition">技能</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+        {{ content }}
+    </main>
+
+    <footer class="border-t border-gray-100 py-8 text-center text-xs text-gray-400">
+        <p>© {{ site.time | date: "%Y" }} Your Name. Powered by GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
