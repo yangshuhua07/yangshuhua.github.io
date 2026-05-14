@@ -1,9 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 | Your Name</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
-<p>Hello 大家好</p>
-<p>我是霸都丶傲天，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold text-xl tracking-tight text-gray-900">Homepage.</span>
+            <div class="space-x-6 text-sm font-medium text-gray-600">
+                <a href="#about" class="hover:text-blue-600 transition">关于</a>
+                <a href="#research" class="hover:text-blue-600 transition">研究与项目</a>
+                <a href="#skills" class="hover:text-blue-600 transition">技能</a>
+                <a href="#contact" class="hover:text-blue-600 transition">联系</a>
+            </div>
+        </div>
+    </nav>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+    <header id="about" class="max-w-5xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+        <div class="w-48 h-48 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 flex-shrink-0 flex items-center justify-center text-white text-5xl font-bold shadow-lg shadow-indigo-100">
+            YN
+        </div>
+        <div class="space-y-4 text-center md:text-left">
+            <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">你好，我是 Your Name</h1>
+            <p class="text-lg text-gray-600 leading-relaxed max-w-2xl">
+                这里是一段简短的自我介绍。你可以写下你目前的身份（例如：研究人员 / 开发者 / 跨学科探索者）。专注于利用定量分析与技术工具解决实际问题，对数据背后的逻辑与网络关系的演变保持长期的好奇心。
+            </p>
+            <div class="flex justify-center md:justify-start gap-4 pt-2">
+                <a href="#contact" class="px-5 py-2.5 bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium rounded-lg transition shadow-sm">
+                    联系我
+                </a>
+                <a href="#" class="px-5 py-2.5 border border-gray-200 hover:bg-gray-50 text-gray-700 text-sm font-medium rounded-lg transition">
+                    下载简历 (PDF)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-24 space-y-20">
+
+        <section id="research" class="space-y-6">
+            <h2 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-blue-600 text-xl"></i> 研究与项目
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 bg-white border border-gray-100 rounded-xl shadow-xs hover:shadow-md transition duration-300">
+                    <span class="text-xs font-semibold text-blue-600 tracking-wider uppercase bg-blue-50 px-2.5 py-1 rounded-md">学术研究</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-3">区域经济与数字创新网络研究</h3>
+                    <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+                        利用统计模型与网络分析方法，探讨城市间技术协同创新的演化机制，关注数字化转型对区域协同发展的深远影响。
+                    </p>
+                </div>
+                <div class="p-6 bg-white border border-gray-100 rounded-xl shadow-xs hover:shadow-md transition duration-300">
+                    <span class="text-xs font-semibold text-emerald-600 tracking-wider uppercase bg-emerald-50 px-2.5 py-1 rounded-md">技术项目</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-3">数据处理与系统后端工程</h3>
+                    <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+                        基于 Node.js/Python 开发高效的数据处理脚本与企业级信息管理后端，实现复杂业务逻辑与底层数据的快速流转。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="space-y-6">
+            <h2 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                <i class="fa-solid fa-code text-indigo-600 text-xl"></i> 技能专长
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="p-4 bg-white border border-gray-100 rounded-lg text-center">
+                    <i class="fa-brands fa-python text-3xl text-blue-500 mb-2"></i>
+                    <p class="text-sm font-semibold text-gray-800">Python</p>
+                    <p class="text-xs text-gray-400 mt-1">数据分析 / 脚本自动化</p>
+                </div>
+                <div class="p-4 bg-white border border-gray-100 rounded-lg text-center">
+                    <i class="fa-brands fa-node-js text-3xl text-green-500 mb-2"></i>
+                    <p class="text-sm font-semibold text-gray-800">Node.js</p>
+                    <p class="text-xs text-gray-400 mt-1">后端开发 / API 设计</p>
+                </div>
+                <div class="p-4 bg-white border border-gray-100 rounded-lg text-center">
+                    <i class="fa-solid fa-chart-network text-3xl text-purple-500 mb-2" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">📊</i>
+                    <p class="text-sm font-semibold text-gray-800">计量与网络分析</p>
+                    <p class="text-xs text-gray-400 mt-1">统计建模 / 文本挖掘</p>
+                </div>
+                <div class="p-4 bg-white border border-gray-100 rounded-lg text-center">
+                    <i class="fa-solid fa-bug-slash text-3xl text-amber-500 mb-2"></i>
+                    <p class="text-sm font-semibold text-gray-800">系统调试与逆向</p>
+                    <p class="text-xs text-gray-400 mt-1">LLDB / 数据库分析</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gray-900 text-white rounded-2xl p-8 md:p-12 shadow-xl flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="space-y-2 text-center md:text-left">
+                <h2 class="text-2xl font-bold">保持联系</h2>
+                <p class="text-gray-400 text-sm">无论是学术探讨、技术交流还是项目合作，都欢迎随时写信给我。</p>
+            </div>
+            <div class="flex gap-4 text-xl">
+                <a href="mailto:your.email@example.com" class="w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition border border-gray-700" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition border border-gray-700" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition border border-gray-700" title="Google Scholar">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-100 py-8 text-center text-xs text-gray-400">
+        <p>© 2026 Your Name. Powered by Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
